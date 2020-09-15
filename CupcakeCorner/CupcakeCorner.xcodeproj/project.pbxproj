@@ -14,6 +14,8 @@
 		46194CBE251081C9004E6E44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46194CBD251081C9004E6E44 /* Preview Assets.xcassets */; };
 		46194CC1251081C9004E6E44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46194CBF251081C9004E6E44 /* LaunchScreen.storyboard */; };
 		46194CCD25108D57004E6E44 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46194CCC25108D57004E6E44 /* Order.swift */; };
+		46194CCF25109182004E6E44 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46194CCE25109182004E6E44 /* AddressView.swift */; };
+		46194CD12510938B004E6E44 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46194CD02510938B004E6E44 /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		46194CC0251081C9004E6E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46194CC2251081C9004E6E44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46194CCC25108D57004E6E44 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		46194CCE25109182004E6E44 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		46194CD02510938B004E6E44 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				46194CB4251081C2004E6E44 /* AppDelegate.swift */,
 				46194CB6251081C2004E6E44 /* SceneDelegate.swift */,
 				46194CB8251081C2004E6E44 /* ContentView.swift */,
+				46194CCE25109182004E6E44 /* AddressView.swift */,
+				46194CD02510938B004E6E44 /* CheckoutView.swift */,
 				46194CCC25108D57004E6E44 /* Order.swift */,
 				46194CBA251081C9004E6E44 /* Assets.xcassets */,
 				46194CBF251081C9004E6E44 /* LaunchScreen.storyboard */,
@@ -151,8 +157,10 @@
 			files = (
 				46194CB5251081C2004E6E44 /* AppDelegate.swift in Sources */,
 				46194CB7251081C2004E6E44 /* SceneDelegate.swift in Sources */,
+				46194CD12510938B004E6E44 /* CheckoutView.swift in Sources */,
 				46194CCD25108D57004E6E44 /* Order.swift in Sources */,
 				46194CB9251081C2004E6E44 /* ContentView.swift in Sources */,
+				46194CCF25109182004E6E44 /* AddressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
