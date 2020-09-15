@@ -24,36 +24,47 @@ class Order: ObservableObject, Codable {
     }
     @Published var extraFrosting = false
     @Published var addSprinkles = false
-
+    
     @Published var name = ""
     @Published var streetAddress = ""
     @Published var city = ""
     @Published var zip = ""
-
+    
     var hasValidAddress: Bool {
-        if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty {
-            return false
-        }
-        return true
+        !checkWhiteSpaces(for: [name, streetAddress, city, zip])
     }
     
     var cost: Double {
-    // $2 per cake
+        // $2 per cake
         var cost = Double(quantity) * 2
         
-    // complicated cakes cost more
+        // complicated cakes cost more
         cost += (Double(type) / 2)
         
-    // $1/cake for extra frosting
+        // $1/cake for extra frosting
         if extraFrosting {
             cost += Double(quantity)
         }
-    // $0.50/cake for sprinkles
+        // $0.50/cake for sprinkles
         if addSprinkles {
             cost += Double(quantity) / 2
         }
         
         return cost
+    }
+        
+    // String of pure whitespace is invalid
+    func checkWhiteSpaces(for words: [String]) -> Bool {
+        var check = false
+        for word in words {
+            if word.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                check = true
+                break
+            } else {
+                check = false
+            }
+        }
+        return check
     }
     
     enum CodingKeys: CodingKey {
