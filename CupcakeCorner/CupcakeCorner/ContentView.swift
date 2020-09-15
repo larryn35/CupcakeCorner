@@ -11,9 +11,6 @@ import SwiftUI
 struct ContentView: View {
     @State private var userName = ""
     @State private var email = ""
-    var disabledForm: Bool {
-        userName.count < 5 || email.count < 5
-    }
     @ObservedObject var order = Order()
 
     var body: some View {
